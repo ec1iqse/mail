@@ -33,30 +33,10 @@
 </template>
 
 <script>
-  import UserInfo from './childComps/UserInfo'
-  import ListView from './childComps/ListView'
-  import NavBar from 'common/navbar/NavBar'
+
 
 	export default {
 		name: "Profile",
-    components: {
-		  UserInfo, ListView, NavBar
-    },
-    data: function () {
-		  return {
-		    orderList: [
-          {icon: '#order', iconColor: '#ff8198', info: '我的消息'},
-          {icon: '#point', iconColor: '#fc7b53', info: '积分商城'},
-          {icon: '#vip', iconColor: '#ffc636', info: '会员卡'},
-        ],
-        serviceList: [
-          {icon: '#service', iconColor: '#ff8198', info: '我的购物车'},
-          {icon: '#download', iconColor: '#ff8198', info: '下载购物APP'},
-        ]
-      }
-    },
-    mounted: function () {
-    }
 	}
 </script>
 
