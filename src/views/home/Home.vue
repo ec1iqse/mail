@@ -5,23 +5,25 @@
                 购物街
             </div>
         </nav-bar>
+        <home-swiper :banners="banners"></home-swiper>
     </div>
 </template>
 
 <script>
-
     import NavBar from "components/common/navbar/NavBar.vue";
     import {getHomeMultiData} from "network/home.ts";
+    import HomeSwiper from "@/views/home/childComponents/HomeSwiper.vue";
 
     export default {
         name: "Home",
         components: {
             NavBar,
+            HomeSwiper,
         },
         data() {
             return {
                 banners: [],
-                recommands: []
+                recommends: []
             };
         },
         created() {
@@ -31,7 +33,7 @@
                 // 异步操作
                 console.log(res);
                 this.banners = res.data.banner.list;
-                this.recommands = res.data.recommand.list;
+                this.recommends = res.data.recommend.list;
             });
         },
     }
