@@ -6,12 +6,12 @@
 </template>
 <script>
     import MainTabBar from "components/content/mainTabbar/MainTabBar.vue";
-
+    import Home from "views/home/Home.vue";
     export default {
         name: "App",
         components: {
             MainTabBar,
-        }
+        },
     }
 </script>
 <style lang="scss">
