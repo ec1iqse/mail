@@ -43,7 +43,6 @@
 
     .recommend-item {
         flex: 1;
-
         img {
             width: $recommend_pic_size;
             height: $recommend_pic_size;
