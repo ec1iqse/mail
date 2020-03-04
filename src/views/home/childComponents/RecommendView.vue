@@ -31,7 +31,7 @@
 </script>
 
 <style lang="scss" scoped>
-    $recommend_pic_size:70px;
+    $recommend_pic_size: 70px;
     .recommend {
         width: 100%;
         display: flex;
@@ -43,6 +43,7 @@
 
     .recommend-item {
         flex: 1;
+
         img {
             width: $recommend_pic_size;
             height: $recommend_pic_size;
